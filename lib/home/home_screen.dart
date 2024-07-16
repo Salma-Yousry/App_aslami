@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
           height: double.infinity,
           fit: BoxFit.fill,
         ),
-Scaffold(
+ Scaffold(
   appBar: AppBar(
 
   ),
