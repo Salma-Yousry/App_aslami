@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/my_theme_date.dart';
 import 'home/home_screen.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
       },
+      theme: MyThemeData.lightmode,
     );
   }
 }
