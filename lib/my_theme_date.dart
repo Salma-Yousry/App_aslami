@@ -12,6 +12,10 @@ class MyThemeData{
      elevation: 0,
        centerTitle: true,
 
+       iconTheme: IconThemeData(
+        color: AppColor.backcolor,
+       ),
+
    ),
    bottomNavigationBarTheme: BottomNavigationBarThemeData(
      //backgroundColor: AppColor.PrimeryLightColor,
@@ -25,7 +29,17 @@ class MyThemeData{
        color: AppColor.backcolor,
        fontWeight: FontWeight.bold,
        fontSize: 30,
-     )
-   )
+     ),
+     bodyMedium: TextStyle(
+       color: AppColor.backcolor,
+       fontWeight: FontWeight.w700,
+       fontSize: 25,
+     ),
+     bodySmall: TextStyle(
+       color: AppColor.backcolor,
+       fontWeight: FontWeight.bold,
+       fontSize: 22,
+     ),
+   ),
  );
 }
