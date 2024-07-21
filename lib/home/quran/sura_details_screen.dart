@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app/app_colors.dart';
+import 'package:provider/provider.dart';
+import '../../providers/app_config_provider.dart';
 import 'item_sura_details.dart';
 
 class SuraDetailsScreen extends StatefulWidget {
@@ -16,6 +18,7 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<AppConfigProvider>(context);
     var args = ModalRoute.of(context)?.settings.arguments as SuraDetailsArgs ;
 
     if(verses.isEmpty) {
@@ -24,11 +27,17 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
 
     return Stack(
       children: [
-      Image.asset("assets/images/background.png",
-      width: double.infinity,
-      height: double.infinity,
-      fit: BoxFit.fill,
-    ),
+        provider.isDarkMode()?
+        Image.asset("assets/images/backgronddart.png",
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
+        ):
+        Image.asset("assets/images/background.png",
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
+        ),
     Scaffold(
     appBar: AppBar(
     title: Text(args.name,
@@ -47,15 +56,20 @@ Center(child: CircularProgressIndicator(color: AppColor.PrimeryLightColor,)
           vertical: MediaQuery.of(context).size.height*0.05,
         ),
 decoration: BoxDecoration(
-  color: AppColor.whitecolor.withOpacity(0.5),
+  color:
+      provider.isDarkMode()?
+          AppColor.PrimeryDarkColor :
+  AppColor.whitecolor.withOpacity(0.5),
   borderRadius: BorderRadius.circular(24),
 ),
         child: ListView.separated(
           separatorBuilder: (context,index){
             return  Divider(
-              color: AppColor.PrimeryLightColor,
-              thickness: 2,
-            );
+                  color:  provider.isDarkMode()?
+                  AppColor.yellowcolor:
+                  AppColor.PrimeryLightColor,
+                  thickness: 2,
+                );
           },
 
           itemBuilder: (context,index){
