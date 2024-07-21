@@ -12,6 +12,10 @@ class MyThemeData{
      elevation: 0,
        centerTitle: true,
 
+       iconTheme: IconThemeData(
+        color: AppColor.backcolor,
+       ),
+
    ),
    bottomNavigationBarTheme: BottomNavigationBarThemeData(
      //backgroundColor: AppColor.PrimeryLightColor,
@@ -25,7 +29,59 @@ class MyThemeData{
        color: AppColor.backcolor,
        fontWeight: FontWeight.bold,
        fontSize: 30,
-     )
-   )
+     ),
+     bodyMedium: TextStyle(
+       color: AppColor.backcolor,
+       fontWeight: FontWeight.w700,
+       fontSize: 25,
+     ),
+     bodySmall: TextStyle(
+       color: AppColor.backcolor,
+       fontWeight: FontWeight.bold,
+       fontSize: 22,
+     ),
+   ),
+ );
+ static final ThemeData darkmode = ThemeData(
+   // canvasColor: AppColor.PrimeryLightColor,
+   bottomSheetTheme: BottomSheetThemeData(
+     backgroundColor: AppColor.PrimeryDarkColor,
+   ),
+   primaryColor: AppColor.PrimeryDarkColor,
+   scaffoldBackgroundColor: Colors.transparent,
+   appBarTheme: const AppBarTheme(
+     backgroundColor: Colors.transparent,
+     elevation: 0,
+     centerTitle: true,
+
+     iconTheme: IconThemeData(
+       color: AppColor.whitecolor,
+     ),
+
+   ),
+   bottomNavigationBarTheme: BottomNavigationBarThemeData(
+   // backgroundColor: AppColor.PrimeryDarkColor,
+     selectedLabelStyle: TextStyle(fontSize: 20),
+     selectedIconTheme: IconThemeData(size: 40,),
+     unselectedIconTheme: IconThemeData(size: 35),
+     selectedItemColor: AppColor.yellowcolor,
+   ),
+   textTheme: TextTheme(
+     bodyLarge: TextStyle(
+       color: AppColor.whitecolor,
+       fontWeight: FontWeight.bold,
+       fontSize: 30,
+     ),
+     bodyMedium: TextStyle(
+       color: AppColor.whitecolor,
+       fontWeight: FontWeight.w700,
+       fontSize: 25,
+     ),
+     bodySmall: TextStyle(
+       color: AppColor.whitecolor,
+       fontWeight: FontWeight.bold,
+       fontSize: 22,
+     ),
+   ),
  );
 }

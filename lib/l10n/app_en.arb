@@ -1,0 +1,23 @@
+{
+"app_title" : "Islami",
+"sura_name" : "Sura Name",
+"quran" : "Quran",
+"hadeth" : "Hadeth",
+"sebha" : "Sebha",
+"radio" : "Radio",
+"hadeth_name" : "Hadeth Name",
+"language" : "Language",
+"settings" : "Settings",
+"arabic" : "Arabic",
+"english" : "English",
+"theme" : "Theme",
+"dark" : "Dark",
+"light" : "Light",
+"radio_quran" : "Radio Quran",
+  "add_tasbeeh": "Add Tasbeeh",
+  "subhanallah": "Subhanallah",
+  "alhamdulillah": "Alhamdulillah",
+  "allahuakbar": "Allah Akbar",
+  "laillahaillallah": "La ilah illallah",
+   "astaghfirullah": "Astaghfirullah"
+}
