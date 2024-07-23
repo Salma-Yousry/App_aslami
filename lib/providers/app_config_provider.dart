@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppConfigProvider extends ChangeNotifier {
-  /// البيانات
+ //data
   String appLanguage = 'en';
   ThemeMode appTheme = ThemeMode.light;
 
