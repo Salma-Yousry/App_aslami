@@ -22,7 +22,7 @@ class _SebhaTabState extends State<SebhaTab> with SingleTickerProviderStateMixin
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       setState(() {
-        // Initialize tasbeehList with translations after the frame has been rendered
+
         tasbeehList = [
           AppLocalizations.of(context)!.subhanallah,
           AppLocalizations.of(context)!.alhamdulillah,
@@ -140,7 +140,7 @@ class _SebhaTabState extends State<SebhaTab> with SingleTickerProviderStateMixin
                             : AppColor.PrimeryLightColor,
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40), // Circular border radius
+                          borderRadius: BorderRadius.circular(40),
                         ),
                       ),
                       child: Text(
