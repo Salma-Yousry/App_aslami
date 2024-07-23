@@ -47,9 +47,9 @@ class SettingTab extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                   Icon(Icons.arrow_drop_down, size: 35,
-    color: provider.isDarkMode()?
-    AppColor.yellowcolor :
-    AppColor.whitecolor,
+                 color: provider.isDarkMode()?
+                 AppColor.yellowcolor :
+                 AppColor.whitecolor,
                  ),
                 ],
               ),
