@@ -39,7 +39,7 @@ class AppConfigProvider extends ChangeNotifier {
   void getselectedPref() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     appLanguage = prefs.getString('language')!;
-    appTheme = prefs.getBool('theme') ?? false ? ThemeMode.dark : ThemeMode.light;
+    appTheme =  prefs.getBool('theme') ?? false ? ThemeMode.dark : ThemeMode.light;
     notifyListeners();
   }
 }
